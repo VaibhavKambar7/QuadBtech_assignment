@@ -43,4 +43,8 @@ const fetchAndStoreData = async (req, res) => {
   }
 };
 
+fetchAndStoreData();
+
+setInterval(fetchAndStoreData, 60000);
+
 module.exports = { fetchAndStoreData, fetchDataFromDatabase };
