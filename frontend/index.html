@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hodlnfo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="Heading">
+    <img src="https://hodlinfo.com/static/media/HODLINFO.8f78fc06.png" alt="" width="25%">
+    <div class="header-button">
+      <select name="" id="INR">
+        <option value="INR">INR</option>
+      </select>
+      <select name="" id="BTC">
+        <option value="">BTC</option>
+        <option value="">ETH</option>
+        <option value="">USTD</option>
+        <option value="">XRP</option>
+        <option value="">TRX</option>
+        <option value="">DASH</option>
+        <option value="">ZEC</option>
+        <option value="">XEM</option>
+        <option value="">IOST</option>
+        <option value="">BTT</option>
+        <option value="">WRX</option>
+      </select>
+      <button class="buy-btc">Buy BTC</button>
+    </div>
+    <div class="connect">
+      <div class="countdown"></div>
+      <button class="connect-tele">
+        <i class="fa-brands fa-telegram fa-2xl" style="color: #ffffff"></i>
+        Connect Telegram
+      </button>
+      <label class="switch">
+        <input type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  <div class="avg-header">
+    <div class="fivemin">
+      <div class="dataamt">0.26%</div>
+      <div class="data">5 Min</div>
+    </div>
+    <div class="onehr">
+      <div class="dataamt">1.15%</div>
+      <div class="data">1 Hour</div>
+    </div>
+    <div class="bestprice" style="max-width: 40%">
+      <h3>Best Price to Trade</h3>
+      <div class="amount">
+        <i class="fa-solid fa-indian-rupee-sign" style="color: #ffffff; font-size: 63px"></i>
+        25,43,361
+      </div>
+      <div class="data">Average BTC/INR net price including commission</div>
+    </div>
+    <div class="oneday">
+      <div class="dataamt">10.7%</div>
+      <div class="data">1 Day</div>
+    </div>
+    <div class="sevenday">
+      <div class="dataamt">19.35%</div>
+      <div class="data">7 Days</div>
+    </div>
+  </div>
+  <div class="tt" style="margin: auto 0px">
+    <table class="table table-borderless text-center">
+      <thead>
+        <tr>
+          <th>
+            <h4><span class="pointer">#</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Platform</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Last Traded Price</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Buy / Sell Price</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Difference</span></h4>
+          </th>
+          <th>
+            <h4><span class="pointer">Savings</span></h4>
+          </th>
+        </tr>
+      </thead>
+      <tbody id="tickerData">
+        <!-- This is where the fetched data will be displayed -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://kit.fontawesome.com/db1bdda987.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
